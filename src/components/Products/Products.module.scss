@@ -1,0 +1,40 @@
+@import "../../styles/index.scss";
+
+.productsWrap {
+  background-color: var(--third);
+  border-top: 1px solid var(--black);
+  border-bottom: 1px solid var(--black);
+  .products {
+    padding: 4rem 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    text-align: center;
+    line-height: 2rem;
+    img {
+      object-fit: cover;
+      width: 100%;
+    }
+    div:first-child {
+      text-align: left;
+      font-size: 4rem;
+      line-height: 4rem;
+      font-weight: normal;
+      img {
+        margin-top: 4rem;
+        margin-left: 4rem;
+        width: 50%;
+      }
+    }
+  }
+  .seeAll {
+    padding-bottom: 4rem;
+    display: flex;
+    justify-content: end;
+    p {
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      text-decoration: underline;
+    }
+  }
+}

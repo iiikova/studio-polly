@@ -1,0 +1,22 @@
+@import "../styles/reset.scss";
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+
+:root {
+  --first: #faf6ee;
+  --second: #e5e5e5;
+  --third: #f1ebe4;
+  --white: #ffffff;
+  --purple: #cab5eb;
+  --black: #111010;
+  --blue: #4299e1;
+  --yellow: #ffdb5b;
+  --orange: #ff9b3d;
+
+  --ff: "DM Sans", sans-serif;
+}
+
+.container {
+  width: min(calc(100% - 2rem), 1367px);
+  margin-inline: auto;
+  font-family: var(--ff);
+}

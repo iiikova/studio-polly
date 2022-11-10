@@ -1,0 +1,61 @@
+@import "../../styles/index.scss";
+
+.footerWrap {
+  background-color: var(--purple);
+  border-top: 1px solid var(--black);
+  padding-bottom: 3rem;
+  .footer {
+    h1 {
+      font-size: 12rem;
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: bold;
+    }
+    .footer_blocks {
+      text-transform: uppercase;
+      display: flex;
+      justify-content: space-between;
+      line-height: 2.2rem;
+      h2 {
+        font-size: 1.6rem;
+        width: 359px;
+        margin-bottom: 1rem;
+      }
+      form {
+        input {
+          height: 64px;
+          width: 360px;
+          background-color: var(--white);
+          border: 1px solid #111010;
+          border-radius: 20px;
+          padding-left: 1rem;
+        }
+        button {
+          width: 112px;
+          height: 74px;
+          border: 1px solid #111010;
+          border-radius: 1600px;
+          background-color: var(--yellow);
+          text-align: center;
+          margin-left: -100px;
+        }
+      }
+    }
+    .terms {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 3rem;
+      div {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+      }
+      div:first-child {
+        text-decoration: underline;
+      }
+      div:last-child {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}

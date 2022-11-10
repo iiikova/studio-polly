@@ -1,0 +1,44 @@
+@import "../../styles/index.scss";
+
+.infoTop {
+  background-color: var(--white);
+  .row {
+    display: inline-grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-content: center;
+    place-items: center;
+    height: 600px;
+    gap: 6rem;
+    text-align: center;
+    line-height: 1.6rem;
+    img {
+      margin-bottom: 1rem;
+    }
+    h2 {
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+    }
+  }
+}
+.infoBottom {
+  background-color: var(--yellow);
+  border-block: 1px solid var(--black);
+  .row2 {
+    height: 300px;
+    display: inline-grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-content: center;
+    place-items: center;
+    gap: 12rem;
+    text-align: center;
+    line-height: 1.6rem;
+    p {
+      margin-bottom: 1.4rem;
+    }
+    h2 {
+      font-size: 1.2rem;
+      text-transform: uppercase;
+    }
+  }
+}

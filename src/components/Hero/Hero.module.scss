@@ -1,0 +1,51 @@
+@import "../../styles/index.scss";
+
+.heroWrap {
+  height: 100%;
+  background-color: var(--second);
+  padding: 0.2rem;
+  .hero {
+    max-height: 640px;
+    background-image: url("../../assets//images/hero.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    .hero_left {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 640px;
+      width: 60%;
+      padding: 3rem;
+      @media (max-width: 425px) {
+        width: 100%;
+        padding: 1rem;
+      }
+      h1 {
+        font-size: 6rem;
+        color: var(--white);
+
+        @media (max-width: 425px) {
+          font-size: 4rem;
+        }
+      }
+      button {
+        font-size: 18px;
+        padding: 1rem 2rem;
+        width: 295px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--yellow);
+        border-radius: 1600px;
+        text-transform: uppercase;
+        color: var(--black);
+
+        @media (max-width: 425px) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
