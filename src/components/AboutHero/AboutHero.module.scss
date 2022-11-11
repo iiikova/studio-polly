@@ -4,10 +4,10 @@
   color: var(--black);
   background-color: var(--second);
   p {
-    font-size: 3.4rem;
-    padding: 4rem 0rem;
+    font-size: var(--fsz-5);
+    padding-block: 4rem;
     @media (max-width: 425px) {
-      font-size: 2rem;
+      font-size: var(--fsz-4);
     }
   }
 }

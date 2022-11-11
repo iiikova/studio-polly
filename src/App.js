@@ -10,11 +10,13 @@ import Navigation from "./components/Navigation/Navigation";
 import Newssendler from "./components/Newssendler/Newssendler";
 import Order from "./components/Order/Order";
 import Products from "./components/Products/Products";
+import Router from "./Router";
 
 function App() {
   return (
     <>
       <Navigation />
+      <Router />
       <Hero />
       <AboutHero />
       <Products />

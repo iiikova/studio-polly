@@ -15,7 +15,6 @@ function Hero() {
             </h1>
             <button>watch our studio tour</button>
           </div>
-          {/* <div></div> */}
         </div>
       </div>
     </div>

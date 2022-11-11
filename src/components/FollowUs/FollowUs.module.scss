@@ -8,7 +8,10 @@
     align-items: center;
     text-transform: uppercase;
     h1 {
-      font-size: 3rem;
+      font-size: var(--fsz-1);
+    }
+    p {
+      font-size: var(--fsz-3);
     }
   }
   .images {

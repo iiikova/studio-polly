@@ -3,7 +3,7 @@
 .heroWrap {
   height: 100%;
   background-color: var(--second);
-  padding: 0.2rem;
+  padding-block: 0.2rem;
   .hero {
     max-height: 640px;
     background-image: url("../../assets//images/hero.png");
@@ -23,15 +23,15 @@
         padding: 1rem;
       }
       h1 {
-        font-size: 6rem;
+        font-size: var(--fsz-6);
         color: var(--white);
 
         @media (max-width: 425px) {
-          font-size: 4rem;
+          font-size: var(--fsz-1);
         }
       }
       button {
-        font-size: 18px;
+        font-size: var(--fsz-3);
         padding: 1rem 2rem;
         width: 295px;
         display: flex;

@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import s from "./Footer.module.scss";
 
 import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 
 function Footer() {
+  const [email, setEmail] = useState("");
+
+  const formSend = (e) => {
+    e.preventDefault();
+    console.log(email);
+  };
+
   return (
     <div className={s.footerWrap}>
       <div className="container">
@@ -12,9 +19,14 @@ function Footer() {
           <div className={s.footer_blocks}>
             <div className={s.block}>
               <h2>Subscribe and get 10% off your first order.</h2>
-              <form>
-                <input type="text" placeholder="Enter your email" />
-                <button>Send</button>
+              <form onSubmit={formSend}>
+                <input
+                  value={email}
+                  onChange={(event) => setEmail(event.target.value)}
+                  type="text"
+                  placeholder="Enter your email"
+                />
+                <button type="submit">Send</button>
               </form>
             </div>
             <div>
@@ -40,15 +52,9 @@ function Footer() {
               <p>Powered by Webflow.</p>
             </div>
             <div>
-              <p>
-                <FaFacebookF />
-              </p>
-              <p>
-                <FaTwitter />
-              </p>
-              <p>
-                <FaInstagram />
-              </p>
+              <FaFacebookF />
+              <FaTwitter />
+              <FaInstagram />
             </div>
           </div>
         </div>

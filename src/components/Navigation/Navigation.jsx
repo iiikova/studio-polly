@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import s from "./Navigation.module.scss";
-import { CiShoppingCart } from "react-icons/ci";
+import { HiOutlineShoppingCart } from "react-icons/hi";
 
 function Navigation() {
   const [count, setCount] = useState(0);
@@ -22,7 +22,7 @@ function Navigation() {
               <p>search</p>
             </div>
             <div>
-              <CiShoppingCart />
+              <HiOutlineShoppingCart />
               <p>({count})</p>
             </div>
           </div>

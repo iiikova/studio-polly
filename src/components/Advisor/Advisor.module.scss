@@ -2,23 +2,22 @@
 
 .advisorWrap {
   padding-block: 4rem;
+  text-transform: uppercase;
   div:first-child {
     display: flex;
     gap: 2rem;
     overflow: hidden;
-    padding: 1rem 0;
+    padding-bottom: 2rem;
     margin-left: -150px;
   }
   div:last-child {
     display: flex;
     gap: 2rem;
     overflow: hidden;
-    padding: 1rem 0;
     margin-left: -80px;
   }
   p {
-    font-size: 8rem;
-    text-transform: uppercase;
+    font-size: var(--fsz-8);
     color: var(--black);
   }
 }

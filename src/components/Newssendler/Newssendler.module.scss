@@ -9,7 +9,9 @@
     place-content: center;
     place-items: center;
     place-self: center;
-
+    @media (max-width: 425px) {
+      grid-template-columns: 1fr;
+    }
     .newsLeft {
       padding-block: 8rem;
       background-image: url("../../assets/images/orange.png");
@@ -22,8 +24,12 @@
       flex-direction: column;
       border-right: 1px solid var(--black);
       gap: 2rem;
+      @media (max-width: 425px) {
+        border-right: none;
+      }
       h1 {
-        font-size: 3rem;
+        font-size: var(--fsz-5);
+
         text-transform: uppercase;
       }
     }
@@ -35,11 +41,16 @@
       height: 304px;
 
       h1 {
-        font-size: 3rem;
+        font-size: var(--fsz-5);
+
         text-transform: uppercase;
       }
       p {
-        width: 234px;
+        width: 250px;
+        font-size: var(--fsz-2);
+      }
+      form {
+        font-size: var(--fsz-2);
       }
       input {
         height: 64px;
