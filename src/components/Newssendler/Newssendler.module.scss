@@ -3,6 +3,10 @@
 .newsWrap {
   background-color: var(--third);
   border-block: 1px solid var(--black);
+  padding-block: 8rem;
+  @media (max-width: 425px) {
+    padding-block: 4rem;
+  }
   .news {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -13,7 +17,8 @@
       grid-template-columns: 1fr;
     }
     .newsLeft {
-      padding-block: 8rem;
+      padding-block: 3rem;
+
       background-image: url("../../assets/images/orange.png");
       background-repeat: no-repeat;
       background-position: center;
@@ -26,11 +31,14 @@
       gap: 2rem;
       @media (max-width: 425px) {
         border-right: none;
+        background-size: contain;
       }
       h1 {
         font-size: var(--fsz-5);
-
         text-transform: uppercase;
+        @media (max-width: 425px) {
+          font-size: var(--fsz-4);
+        }
       }
     }
     .newsRight {
@@ -42,8 +50,10 @@
 
       h1 {
         font-size: var(--fsz-5);
-
         text-transform: uppercase;
+        @media (max-width: 425px) {
+          text-align: center;
+        }
       }
       p {
         width: 250px;

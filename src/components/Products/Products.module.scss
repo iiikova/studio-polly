@@ -55,6 +55,9 @@
       font-size: var(--fsz-4);
       text-transform: uppercase;
       text-decoration: underline;
+      @media (max-width: 425px) {
+        font-size: var(--fsz-2);
+      }
     }
   }
 }

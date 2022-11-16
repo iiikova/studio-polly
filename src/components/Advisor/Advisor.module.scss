@@ -3,6 +3,14 @@
 .advisorWrap {
   padding-block: 4rem;
   text-transform: uppercase;
+  @media (max-width: 425px) {
+    padding-bottom: 0rem;
+  }
+  img {
+    @media (max-width: 425px) {
+      width: 50px;
+    }
+  }
   div:first-child {
     display: flex;
     gap: 2rem;
@@ -19,5 +27,8 @@
   p {
     font-size: var(--fsz-8);
     color: var(--black);
+    @media (max-width: 425px) {
+      font-size: var(--fsz-5);
+    }
   }
 }

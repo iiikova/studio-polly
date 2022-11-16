@@ -13,6 +13,7 @@
 
     .logo {
       font-size: var(--fsz-4);
+      cursor: pointer;
     }
     .links {
       display: flex;
@@ -22,10 +23,18 @@
         display: none;
       }
     }
+    .menu {
+      @media (min-width: 768px) {
+        display: none;
+      }
+    }
     .order {
       display: flex;
       gap: 1rem;
       font-size: var(--fsz-2);
+      @media (max-width: 768px) {
+        display: none;
+      }
       div {
         display: flex;
         align-items: center;

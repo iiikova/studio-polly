@@ -46,6 +46,10 @@
         padding: 1rem;
         text-transform: uppercase;
         font-size: var(--fsz-2);
+        @media (max-width: 425px) {
+          margin-bottom: 2rem;
+          width: 100%;
+        }
       }
     }
   }
