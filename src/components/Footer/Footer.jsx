@@ -1,33 +1,24 @@
-import React, { useState } from "react";
+import React from "react";
+
+// styles
 import s from "./Footer.module.scss";
 
+// icons
 import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 
+// components
+import FormMail from "../FormMail/FormMail";
+
 function Footer() {
-  const [email, setEmail] = useState("");
-
-  const formSend = (e) => {
-    e.preventDefault();
-    console.log(email);
-  };
-
   return (
     <div className={s.footerWrap}>
       <div className="container">
         <div className={s.footer}>
           <h1>studio polly</h1>
           <div className={s.footer_blocks}>
-            <div className={s.block}>
+            <div>
               <h2>Subscribe and get 10% off your first order.</h2>
-              <form onSubmit={formSend}>
-                <input
-                  value={email}
-                  onChange={(event) => setEmail(event.target.value)}
-                  type="text"
-                  placeholder="Enter your email"
-                />
-                <button type="submit">Send</button>
-              </form>
+              <FormMail />
             </div>
             <div>
               <p>home</p>
@@ -48,8 +39,10 @@ function Footer() {
           </div>
           <div className={s.terms}>
             <div>
-              <p>Made by Daniela Tomanova.</p>
-              <p>Powered by Webflow.</p>
+              <p>Made by Ikova</p>
+              <p>
+                <a href="mailto:ikova.ua@gmail.com">ikova.ua@gmail.com</a>
+              </p>
             </div>
             <div>
               <FaFacebookF />

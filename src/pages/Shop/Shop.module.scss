@@ -1,0 +1,12 @@
+@import "../../styles/index.scss";
+
+.outerWrap {
+  background-color: var(--second);
+  .inner {
+    padding-block: 4rem;
+    height: 100vh;
+    h1 {
+      font-size: var(--fsz-4);
+    }
+  }
+}

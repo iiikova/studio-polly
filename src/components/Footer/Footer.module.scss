@@ -3,7 +3,7 @@
 .footerWrap {
   background-color: var(--purple);
   border-top: 1px solid var(--black);
-  padding-bottom: 3rem;
+  padding-block: 3rem;
   text-transform: uppercase;
   .footer {
     h1 {
@@ -16,79 +16,57 @@
     }
     .footer_blocks {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 10rem;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 4rem;
       justify-content: space-between;
       line-height: 2.2rem;
+      @media (max-width: 1024px) {
+        grid-template-columns: 2fr 2fr;
+        gap: 4rem;
+      }
       @media (max-width: 425px) {
         grid-template-columns: 1fr;
-        gap: 2rem;
         text-align: center;
+        gap: 2rem;
       }
       h2 {
-        text-transform: uppercase;
-        font-size: 1.6rem;
         font-size: var(--fsz-4);
-        width: 359px;
-        margin-bottom: 1rem;
-        @media (max-width: 425px) {
-          text-align: center;
-          width: 100%;
-        }
       }
       p {
         font-size: var(--fsz-2);
       }
-      form {
-        position: relative;
-        font-size: var(--fsz-2);
-        input {
-          height: 64px;
-          width: 360px;
-          background-color: var(--white);
-          border: 1px solid #111010;
-          border-radius: 20px;
-          text-align: left;
-          padding-left: 1rem;
-        }
-        button {
-          position: absolute;
-          right: -10px;
-          top: -5px;
-          width: 112px;
-          height: 74px;
-          border: 1px solid #111010;
-          border-radius: 1600px;
-          background-color: var(--yellow);
-          text-align: center;
-          margin-left: -100px;
-        }
-      }
     }
     .terms {
-      display: flex;
-      justify-content: space-between;
-      padding-top: 3rem;
+      margin-top: 3rem;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      align-self: center;
+      gap: 2rem;
       font-size: var(--fsz-2);
       @media (max-width: 425px) {
-        flex-direction: column;
-        justify-content: center;
+        text-align: center;
+        grid-template-columns: 1fr;
       }
       div {
         display: flex;
-        align-items: center;
+        justify-content: space-between;
         gap: 2rem;
       }
       div:first-child {
         text-decoration: underline;
-        text-align: center;
       }
       div:last-child {
         font-size: var(--fsz-4);
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        svg {
+          cursor: pointer;
+        }
+        @media (min-width: 768px) {
+          justify-self: end;
+        }
         @media (max-width: 425px) {
-          justify-content: center;
-          text-align: center;
-          margin-top: 2rem;
+          justify-self: center;
         }
       }
     }

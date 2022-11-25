@@ -3,15 +3,18 @@
 .infoTop {
   background-color: var(--white);
   padding-block: 4rem;
-
   .row {
     display: inline-grid;
     grid-template-columns: repeat(4, 1fr);
     place-content: center;
     place-items: center;
-    gap: 6rem;
+    gap: 4rem;
     text-align: center;
     line-height: 1.6rem;
+    @media (max-width: 768px) {
+      grid-template-columns: 2fr 2fr;
+      gap: 2rem;
+    }
     @media (max-width: 425px) {
       grid-template-columns: 1fr;
       gap: 2rem;
@@ -41,6 +44,10 @@
     gap: 12rem;
     text-align: center;
     line-height: 1.6rem;
+    @media (max-width: 768px) {
+      grid-template-columns: 2fr 2fr;
+      gap: 2rem;
+    }
     @media (max-width: 425px) {
       grid-template-columns: 1fr;
       gap: 2rem;

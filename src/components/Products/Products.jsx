@@ -1,5 +1,6 @@
 import React from "react";
 import s from "./Products.module.scss";
+import { NavLink } from "react-router-dom";
 
 function Products() {
   return (
@@ -41,7 +42,7 @@ function Products() {
           </div>
         </div>
         <div className={s.seeAll}>
-          <p>see all products</p>
+          <NavLink to={'/allProd'}>see all products</NavLink>
         </div>
       </div>
     </div>

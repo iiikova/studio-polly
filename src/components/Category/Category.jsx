@@ -23,7 +23,7 @@ function Category() {
               to="/vases"
               style={({ isActive }) => (isActive ? activeStyle : undefined)}
             >
-              <p>Vases</p>
+              Vases
             </NavLink>
           </div>
           <div>
@@ -35,7 +35,7 @@ function Category() {
               to="/cups"
               style={({ isActive }) => (isActive ? activeStyle : undefined)}
             >
-              <p>Cups</p>
+              Cups
             </NavLink>
           </div>
           <div>
@@ -47,7 +47,7 @@ function Category() {
               to="/plates"
               style={({ isActive }) => (isActive ? activeStyle : undefined)}
             >
-              <p>Plates </p>
+              Plates
             </NavLink>
           </div>
         </div>
